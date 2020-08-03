@@ -1,47 +1,4 @@
-[//]: # (Image References)
-
-[image1]: ./images/sample_dog_output.png "Sample Output"
-[image2]: ./images/vgg16_model.png "VGG-16 Model Keras Layers"
-[image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
-
-
-# Dog Breed Detector
-
-This is the capstone project for Data Scientist Nanodegree from Udacity. All of the necessairy code is provided in the jupyter notebook. If you want to run the code locally, please refer to the deployment instructions below. I also developed a web app, which is deployed on Heroku https://my-dog-app.herokuapp.com/. You may experience problems on the server, so all the necessairy code for the local deployment of web app is provided in the repository.        
-
-
-## Project Overview
-
-The scope of the app is to classify dog breeds using pattern recognition. This may be a useful application for the fast and easy recognition of the specific dog breed from the provided pictures. For example, the breed recognition from pictures could be used to identify heritage of mixed dog breeds, which is interesting information for the current or future owners. In addition, the application may provide an opportunity for the targeted marketing for specific breed owners. App also recognizes humans and classifies them as the most similar dog breed. This is the funny part of this app!   
-
-First, we want that our app succesfully detects and distuingishes humans and dogs on the given picture. Second, we want to detect one of 133 dog breeds on the picture. Therefore, the app has three main components:
-
-- Detection of a human 
-- Detection of a dog
-- Classification of a specific dog breed
-
-All three parts employ various pre-trained models and are discussed in more detail in the methodology section. 
-
-## Data
-
-## Methodology
-
-### Detection of the human
-
-The app uses [OpenCVs](https://docs.opencv.org/trunk/d7/d8b/tutorial_py_face_detection.html) implementation of Haar feature-based cascade classifiers to detect human faces in images. In this case, one of the pre-trained face detectors was used. This selected classifier detects humans on the pictures very well.  
-
-### Detection of the dog
-
-For the detection of dogs on pictures, pre-trained [ResNet-50](http://ethereon.github.io/netscope/#/gist/db945b393d40bfa26006) model was used. Used model performs perfectly on dog and human images. 
-
-### Classification of a specific dog breed
-
-The app CNNs created by transfer learning that can identify dog breed from images. The model uses the the pre-trained Xception as a fixed feature extractor, where the last convolutional output of [Xception](https://arxiv.org/abs/1610.02357) is fed as input to our model. This model has ~85% accuracy. 
-
-## Results
-
-The app was tested on a few selected images. Generally it seems to recognize dog breeds quite well. 
-### Instructions
+# Instructions
 
 1. Clone the repository and navigate to the downloaded folder.
 ```	
