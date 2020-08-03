@@ -5,14 +5,21 @@
 [image3]: ./images/vgg16_model_draw.png "VGG16 Model Figure"
 
 
+# Dog Breed Detector
+
+This is the capstone project for Data Scientist Nanodegree from Udacity. All of the necessairy code is provided in the jupyter notebook. If you want to run the code locally, please refer to the deployment instructions below. I also developed a web app, which is deployed on Heroku https://my-dog-app.herokuapp.com/. You may experience problems on the server, so all the necessairy code for the local deployment of web app is provided in the repository.        
+
+
 ## Project Overview
 
-Welcome to the Convolutional Neural Networks (CNN) project in the AI Nanodegree! In this project, you will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, your algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
+The scope of the app is to classify dog breeds using pattern recognition. This may be a useful application for the fast and easy recognition of the specific dog breed from the provided pictures. For example, the breed recognition from pictures could be used to identify heritage of mixed dog breeds, which is interesting information for the current or future owners. In addition, the application may provide and opportunity for the targeted marketing for specific breed owners. App also recognizes humans and classifies them as the most similar dog breed. This is a fun part of this app!   
 
-![Sample Output][image1]
+The project can be divided in three main goals:
+- Detection of the human 
+- Detection of dogs
+- Classification of specific dog breed
 
-Along with exploring state-of-the-art CNN models for classification, you will make important design decisions about the user experience for your app.  Our goal is that by completing this lab, you understand the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline.  Each model has its strengths and weaknesses, and engineering a real-world application often involves solving many problems without a perfect answer.  Your imperfect solution will nonetheless create a fun user experience!
-
+ALl three parts emp
 ## Project Instructions
 
 ### Instructions
