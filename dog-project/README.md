@@ -2,7 +2,7 @@
 
 1. Clone the repository and navigate to the downloaded folder.
 ```	
-git clone https://github.com/udacity/dog-project.git
+git clonehttps://github.com/doroslava/Dog_breed_detector.git
 cd dog-project
 ```
 
