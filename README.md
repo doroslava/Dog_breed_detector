@@ -7,8 +7,7 @@
 
 # Dog Breed Detector
 
-This is the capstone project for Data Scientist Nanodegree from Udacity. All of the necessairy code is provided in the jupyter notebook. If you want to run the code locally, please refer to the deployment instructions below. I also developed a web app, which is deployed on Heroku https://my-dog-app.herokuapp.com/. You may experience problems on the server, so all the necessairy code for the local deployment of web app is provided in the repository.        
-
+This is the capstone project for Data Scientist Nanodegree from Udacity. All of the necessairy code is provided in the jupyter notebook in the dog-project folder. If you want to run the code locally, please refer to the deployment instructions in the respective folder. I also developed a web app, which is deployed on Heroku https://my-dog-app.herokuapp.com/. You may experience problems on the server, so all the necessairy code for the local deployment of web app is provided in the folder dog-app.        
 
 ## Project Overview
 
@@ -20,14 +19,13 @@ First, we want that our app succesfully detects and distuingishes humans and dog
 - Detection of a dog
 - Classification of a specific dog breed
 
-All three parts employ various pre-trained models and are discussed in more detail in the methodology section. 
+All three parts employ various pre-trained models based on connvolutional neural networks (CNNs) and are discussed in more detail in the methodology section. 
 
 ## Data
 
 The human dataset includes 13233 human images and small subset was used for the validation of the human and dog detection models. 
 
 The dog dataset consists of 6680 training dog images, 835 validation dog images and 836 test dog images. The whole training and validation set were used for training of CNNs for dog breed classification, while test set was used to access model accuracy. Small subset of training set was used for the validation of the human and dog detection models. 
-
 
 ## Methodology
 
@@ -41,7 +39,7 @@ For the detection of dogs on pictures, pre-trained [ResNet-50](http://ethereon.g
 
 ### Classification of a specific dog breed
 
-The app CNNs created by transfer learning that can identify dog breed from images. The model uses the the pre-trained Xception as a fixed feature extractor, where the last convolutional output of [Xception](https://arxiv.org/abs/1610.02357) is fed as input to our model. This model has ~85% accuracy. 
+The app CNNs created by transfer learning that can identify dog breed from images. The model uses the the pre-trained Xception as a fixed feature extractor, where the last convolutional output of [Xception](https://arxiv.org/abs/1610.02357) is fed as input to our model, which consist of two fully connected layers with relu and softmax activation function. The model has ~85% accuracy on the test set.  
 
 ## Results
 
@@ -63,6 +61,6 @@ For humans, I tried few familiar faces, and it is fun to see the results (see th
 
 ### Conclusion
 
-Used models seem to work quite nicely on the pictures of decent quality. In the future, I would also consider using data augmentation to improve a models a bit further. 
+Used models seem to work quite nicely on the pictures of decent quality. In the future, I would also consider using data augmentation to improve a models a bit further. In general, the transfer learning in this specific project resulted in models of good quality. 
 
 Fun idea - It would be actually interesting too see small subset of dogs and their owners, and see if there is overlapping with the prediction from the app and real life. 
