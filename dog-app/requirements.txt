@@ -6,5 +6,5 @@ plotly==2.0.15
 Werkzeug==0.14.1
 opencv-python==3.1.0.4
 pillow
-tensorflow==1.4.0
+tensorflow==1.15.2
 h5py==2.7.0
