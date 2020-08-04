@@ -19,7 +19,7 @@ First, we want that our app succesfully detects and distuingishes humans and dog
 - Detection of a dog
 - Classification of a specific dog breed
 
-All three parts employ various pre-trained models based on connvolutional neural networks (CNNs) and are discussed in more detail in the methodology section. 
+All three parts employ various pre-trained models based on connvolutional neural networks (CNNs) and are discussed in more detail in the methodology section. If you are interested in more technical information, please refer to the jupyter notebook in dog/project. 
 
 ## Data
 
