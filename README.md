@@ -67,10 +67,10 @@ With the final model, following images are correctly recognized as Border Collie
 
 ![image2]
 
-For humans, I tried few familiar faces, and it is fun to see the results (see the jupyter notebook for more results). However, I think it is actually quite hard to evaluate the results for humans since our perception is quite subjective. Although Lady Gaga definitely looks like poodle to me :-). What I noticed is that there is bias towards certain breeds such as Dachshund. Maybe Dachshund in general shares more underlying features with humans, and therefore larger number of human faces is detected as Dachshund.  
+For humans, I tried few familiar faces, and it is fun to see the results (see the jupyter notebook for more results). However, I think it is actually quite hard to evaluate the results for humans since our perception is quite subjective. Although Lady Gaga definitely looks like poodle to me :-). What I noticed is that there is bias towards certain breeds such as Dachshund. Maybe Dachshund in general shares more underlying features with humans, and therefore larger number of human faces is detected as Dachshund. Fun idea - It would be actually interesting too see small subset of dogs and their owners, and see if there is overlapping with the prediction from the app and real life.  
 
 ### Conclusion
 
-Used models seem to work quite nicely on the pictures of decent quality. In the future, I would also consider using data augmentation to improve a models a bit further. In general, the transfer learning in this specific project resulted in models of good quality. 
+Deployed models seem to work quite nicely on the pictures of decent quality. However, there is some room for improvements for face detection and dog breed classification part. Face detection is not optimal if there is unusual skin tone (e.g. orange) or if there are some additional features (e.g. glasses). In the future, I would first consider using data augmentation to improve a models a bit further and trying additional model architectures for dog breed classification. 
 
-Fun idea - It would be actually interesting too see small subset of dogs and their owners, and see if there is overlapping with the prediction from the app and real life. 
+
